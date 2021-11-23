@@ -1,4 +1,6 @@
-# Set-up
+# About
+
+This repo is for setting up a live reloading session for wordpress or php projects. The browser will reload on file change just like a nodejs project would.
 
 ## Live Reload
 

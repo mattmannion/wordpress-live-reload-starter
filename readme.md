@@ -2,10 +2,9 @@
 
 ## Live Reload
 
-> Note: Must be this extension specifically.
-
 - [**Chrome Extension**](https://chrome.google.com/webstore/detail/live-reload/jcejoncdonagmfohjcdgohnmecaipidc)
 - [**Github**](https://github.com/blaise-io/live-reload#readme)
+  > Note: Must be this extension specifically.
 
 ### Extension settings:
 

@@ -12,6 +12,7 @@ This repo is for setting up a live reloading session for wordpress or php projec
 
 - Host: http://`<wpurl>`
 - Source: http://`<wpurl>`/\* - the /\* is how the magic happens
+  > Note: Set the `Monitor source URLS every X seconds` to .5 seconds for the fastest refresh.
 
 ## Essential PHP
 

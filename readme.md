@@ -55,7 +55,7 @@ use `dev` to start the scss and typescript compile
 
 ## Technical Notes / FAQ
 
-1. Q: My project is not refreshing when saving a Script or Style File
+Q: My project is not refreshing when saving a Script or Style File
 
 > Note: Script or Style referring to JS, TS, CSS, SCSS, ect...
 

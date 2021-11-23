@@ -57,7 +57,7 @@ use `dev` to start the scss and typescript compile
 
 <ol>
   <li>
-   Q: <em>Webpack watcher is not working</em><br/>
+   Q: <strong>Webpack watcher is not working</strong><br/>
    A: Node must be using the file system native to the project. For example: If you are using WSL2, you will need to switch over to powershell or WSL1 for this to work properly. 
   </li>
 </ol>

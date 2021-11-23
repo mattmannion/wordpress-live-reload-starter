@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es5",
     "module": "commonjs",
-    "lib": ["dom", "DOM.Iterable", "es6", "es2017", "ESNext"],
+    "lib": ["DOM", "ESNext"],
     "skipLibCheck": true,
     "moduleResolution": "node",
     "removeComments": true,
@@ -19,12 +19,12 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
-    "outDir": "./dist/scripts"
-    // "baseUrl": "."
-    // "paths": {
-    //   "src/*": ["src/*"]
-    // }
+    "outDir": "./dist",
+    "baseUrl": "src",
+    "paths": {
+      "scripts/*": ["scripts/*"]
+    }
   },
-  "include": ["src/scripts"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

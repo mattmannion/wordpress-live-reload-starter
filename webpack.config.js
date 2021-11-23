@@ -20,10 +20,13 @@ module.exports = {
     __dirname + '/src/sass/index.scss',
   ],
   output: {
-    filename: 'scripts/index.js',
     path: path.resolve(__dirname, 'dist'),
+    filename: 'index.js',
   },
   resolve: {
+    alias: {
+      scripts: '/src/scripts',
+    },
     extensions: ['.webpack.js', '.web.js', '.ts', '.js'],
   },
   module: {
@@ -34,7 +37,7 @@ module.exports = {
         exclude: /node_modules/,
         type: 'asset/resource',
         generator: {
-          filename: 'styles/index.css',
+          filename: 'index.css',
         },
         use: [
           { loader: 'postcss-loader' },

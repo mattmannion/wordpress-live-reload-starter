@@ -8,12 +8,16 @@
   "scripts": {
     "rf:d": "rimraf dist/*",
     "wp": "webpack",
-    "start": "run-s rf:d wp"
+    "clear": "clear",
+    "start": "run-s rf:d clear wp"
   },
   "devDependencies": {
+    "@types/dotenv": "^8.2.0",
     "@types/dotenv-webpack": "^7.0.3",
     "autoprefixer": "^10.4.0",
     "css-loader": "^6.5.1",
+    "dotenv": "^10.0.0",
+    "dotenv-webpack": "^7.0.3",
     "postcss": "^8.3.11",
     "postcss-loader": "^6.2.0",
     "sass": "^1.43.4",
@@ -30,10 +34,5 @@
     "> 1%",
     "iOS 7",
     "last 3 iOS versions"
-  ],
-  "dependencies": {
-    "@types/dotenv": "^8.2.0",
-    "dotenv": "^10.0.0",
-    "dotenv-webpack": "^7.0.3"
-  }
+  ]
 }

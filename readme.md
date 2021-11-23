@@ -55,11 +55,8 @@ use `dev` to start the scss and typescript compile
 
 ## Technical Notes / FAQ
 
-<ol>
-  <li>
-   Q: My project is not refreshing when saving a Script or Style File
-   > Note: Script or Style referring to JS, TS, CSS, SCSS, ect...
-   <br/>
-   A: Node and Webpack must be using the file system native to the project. For example: If you are using WSL2, you will need to switch over to powershell or WSL1 for this to work properly. 
-  </li>
-</ol>
+Q: My project is not refreshing when saving a Script or Style File
+
+> Note: Script or Style referring to JS, TS, CSS, SCSS, ect...
+
+A: Node and Webpack must be using the file system native to the project. For example: If you are using WSL2, you will need to switch over to powershell or WSL1 for this to work properly.

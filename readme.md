@@ -1,6 +1,8 @@
 # Set-up
 
-## Live Reload (it has to be this one specifically. there are many of the same name):<br/>
+## Live Reload
+
+> Note: Must be this extension specifically.
 
 - [**Chrome Extension**](https://chrome.google.com/webstore/detail/live-reload/jcejoncdonagmfohjcdgohnmecaipidc)
 - [**Github**](https://github.com/blaise-io/live-reload#readme)

@@ -10,8 +10,8 @@ This repo is for setting up a live reloading session for wordpress or php projec
 
 ### Extension settings:
 
-- host: http://`<wpurl>`
-- source: http://`<wpurl>`/\* - the /\* is how the magic happens
+- Host: http://`<wpurl>`
+- Source: http://`<wpurl>`/\* - the /\* is how the magic happens
 
 ## Essential PHP
 

@@ -1,6 +1,6 @@
 # About
 
-This repo is for setting up a live reloading session for wordpress or php projects. The browser will reload on file change just like a nodejs project would. Tested only [**Localwp**](https://localwp.com/), I will test others in the future. This starter also assumes basic understand of [**Webpack**](https://webpack.js.org/) configuration. It is setup for TS and SCSS by default. I can add other setups in other branches if requested.
+This repo is for setting up a live reloading session for wordpress or php projects. The browser will reload on file change just like a nodejs project would. Tested only [**Localwp**](https://localwp.com/), I will test others in the future. This starter also assumes basic understanding of [**Webpack**](https://webpack.js.org/) configuration. It is setup for TS and SCSS by default. I can add other setups in other branches if requested.
 
 ## Live Reload
 

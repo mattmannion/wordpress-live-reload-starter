@@ -5,11 +5,17 @@
   "version": "1.0.0",
   "description": "wordpress starter",
   "main": "index.js",
+  "nodemonConfig": {
+    "ext": "php",
+    "signal": "SIGTERM",
+    "exec": "php html/*.php || exit 1"
+  },
   "scripts": {
     "rf:d": "rimraf dist/*",
     "wp": "webpack",
     "clear": "clear",
-    "start": "run-s rf:d clear wp"
+    "start": "run-s rf:d clear wp",
+    "d": "nodemon"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
@@ -34,5 +40,6 @@
     "> 1%",
     "iOS 7",
     "last 3 iOS versions"
-  ]
+  ],
+  "dependencies": {}
 }

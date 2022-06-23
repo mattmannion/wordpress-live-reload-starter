@@ -15,17 +15,14 @@ module.exports = {
       silent: true,
     }),
   ],
-  entry: [
-    __dirname + '/src/scripts/index.ts',
-    __dirname + '/src/sass/index.scss',
-  ],
+  entry: [__dirname + '/src/index.ts', __dirname + '/src/sass/index.scss'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
   },
   resolve: {
     alias: {
-      scripts: '/src/scripts',
+      src: '/src',
     },
     extensions: ['.webpack.js', '.web.js', '.ts', '.js'],
   },

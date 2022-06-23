@@ -20,9 +20,9 @@
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "outDir": "./dist",
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "paths": {
-      "scripts/*": ["scripts/*"]
+      "src/*": ["./*"]
     }
   },
   "include": ["src"],

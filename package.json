@@ -9,7 +9,7 @@
     "rf:d": "rimraf dist/*",
     "wp": "webpack",
     "clear": "clear",
-    "start": "run-s rf:d clear wp"
+    "d": "run-s rf:d clear wp"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",

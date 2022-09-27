@@ -17,7 +17,7 @@ module.exports = {
   ],
   entry: [
     __dirname + '/src/scripts/index.ts',
-    __dirname + '/src/sass/index.scss',
+    __dirname + '/src/sass/_scss/index.scss',
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),

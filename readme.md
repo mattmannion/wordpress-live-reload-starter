@@ -28,7 +28,7 @@ yarn
 npm run d
 ```
 
-These two commands will install all dependancies using yarn(you can also use `npm i` if you'd like) and `npm run d` will start up webpack for you can watch the files for any changes.
+These two commands will install all dependancies using yarn(you can also use `npm i` if you'd like) and `npm run d` will start up webpack for you and watch the files for any changes.
 
 ## Dependencies
 

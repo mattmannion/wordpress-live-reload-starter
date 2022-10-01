@@ -16,7 +16,7 @@ module.exports = {
     }),
   ],
   entry: [
-    __dirname + '/src/scripts/index.ts',
+    __dirname + '/src/typescript/index.ts',
     __dirname + '/src/sass/_scss/index.scss',
   ],
   output: {
@@ -25,7 +25,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      scripts: '/src/scripts',
+      ts: '/src/typescript',
     },
     extensions: ['.webpack.js', '.web.js', '.ts', '.js'],
   },

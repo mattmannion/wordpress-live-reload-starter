@@ -1,4 +1,4 @@
-import { hi } from 'scripts/greetings/hi';
+import { hi } from 'ts/greetings/hi';
 
 console.log(hi);
 

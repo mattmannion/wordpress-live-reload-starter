@@ -12,6 +12,7 @@
     "d": "run-s rf:d clear wp"
   },
   "devDependencies": {
+    "@types/common-tags": "^1.8.1",
     "@types/dotenv": "^8.2.0",
     "@types/dotenv-webpack": "^7.0.3",
     "autoprefixer": "^10.4.0",
@@ -34,5 +35,10 @@
     "> 1%",
     "iOS 7",
     "last 3 iOS versions"
-  ]
+  ],
+  "dependencies": {
+    "common-tags": "^1.8.2",
+    "jest": "^29.1.2",
+    "jest-dom": "^4.0.0"
+  }
 }

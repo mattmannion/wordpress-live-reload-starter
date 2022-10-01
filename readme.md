@@ -16,7 +16,7 @@ This repo is for setting up a live reloading session for wordpress or php projec
 
 ## Installation guide
 
-Copy the docker-compose.yml found in this repo to where you want this wordpress install to live. Use docker-compose up -d to install the images and volumes to the target directory. Next use `sudo chmod 777 -R ./*` to take ownership of the created volume files for local development.
+Copy the docker-compose.yml found in this repo to where you want this wordpress install to live. Use `docker-compose up -d` to install the images and volumes to the target directory. Next use `sudo chmod 777 -R ./*` to take ownership of the created volume files for local development.
 
 Now we need to clone this repo to a theme folder. Navigate to wp-content/themes and make a folder there. You can name it whatever you want. cd into that newly created folder and clone this repo inside the theme folder using `git clone git@github.com:mattmannion/wordpress-live-reload-starter.git .`
 

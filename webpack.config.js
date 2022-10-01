@@ -25,7 +25,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      scripts: '/src/typescript',
+      ts: '/src/typescript',
     },
     extensions: ['.webpack.js', '.web.js', '.ts', '.js'],
   },

@@ -22,7 +22,7 @@
     "outDir": "./dist",
     "baseUrl": "src",
     "paths": {
-      "scripts/*": ["scripts/*"]
+      "ts/*": ["typescript/*"]
     }
   },
   "include": ["src"],

@@ -1,3 +1,7 @@
+<?php
+include('thing.php')
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

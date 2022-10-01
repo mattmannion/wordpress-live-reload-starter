@@ -1,0 +1,2 @@
+<?php
+$thing = "thing";

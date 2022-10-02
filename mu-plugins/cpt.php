@@ -18,5 +18,4 @@ function cpt()
   ]);
 }
 
-// stuff
 add_action('init', 'cpt');

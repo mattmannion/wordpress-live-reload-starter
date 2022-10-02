@@ -15,7 +15,7 @@
     "d": "run-p mu-p dev"
   },
   "nodemonConfig": {
-    "ext": "php,js",
+    "ext": "php",
     "signal": "SIGTERM",
     "exec": "cd mu-plugins && npm run clone || exit 1"
   },

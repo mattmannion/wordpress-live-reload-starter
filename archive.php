@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
 <div class="posts">
-  <?php while (have_posts()) : the_post() ?>
+  <div>
+    <h1><?php the_archive_title() ?> </h1>
+    <div><?php the_archive_description() ?></div>
+  </div>
 
+  <?php while (have_posts()) : the_post() ?>
     <div class="posts__post">
       <div class="metabox">
         posted by <?php the_author_posts_link() ?>,

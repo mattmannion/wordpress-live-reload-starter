@@ -20,7 +20,7 @@
 
   <div>
     <span>back to</span>
-    <a href="<?php echo get_post_type_archive_link('post') ?>">
+    <a href="<?php echo get_post_type_archive_link('event') ?>">
       <?php echo get_post_type() ?>
     </a>
   </div>

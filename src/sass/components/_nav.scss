@@ -4,7 +4,22 @@
   align-items: center;
   gap: 1rem;
 
+  &--active {
+    text-decoration: underline;
+  }
+
   & > li {
     list-style: none;
+
+    & > a {
+      color: grey;
+      text-decoration: none;
+
+      transition: color 300ms;
+
+      &:hover {
+        color: white;
+      }
+    }
   }
 }

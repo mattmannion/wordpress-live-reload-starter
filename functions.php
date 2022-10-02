@@ -1,5 +1,6 @@
 <?php
 
+// actions
 function main_files()
 {
   wp_enqueue_style('css', get_template_directory_uri() . '/dist/index.css');
@@ -15,3 +16,13 @@ function main_features()
 }
 
 add_action('after_setup_theme', 'main_features');
+
+// filters
+function nav_active_class($classes)
+{
+  if (in_array('current-menu-item', $classes)) $classes[] = 'nav--active';
+
+  return $classes;
+}
+
+add_filter('nav_menu_css_class', 'nav_active_class');

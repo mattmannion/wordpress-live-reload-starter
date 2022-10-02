@@ -59,3 +59,13 @@ body {
   font-size: 4rem;
   color: white;
 }
+
+a {
+  color: grey;
+
+  transition: color 300ms;
+
+  &:hover {
+    color: white;
+  }
+}

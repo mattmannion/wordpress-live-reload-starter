@@ -4,8 +4,11 @@
 
   <?php $parent_id = wp_get_post_parent_id(get_the_ID());
   if ($parent_id) : ?>
-
-    <div>parent page: <a href="<?php echo get_permalink($parent_id) ?>"><?php echo get_the_title($parent_id); ?></a></div>
+    <div>parent page:
+      <a href="<?php echo get_permalink($parent_id) ?>">
+        <?php echo get_the_title($parent_id); ?>
+      </a>
+    </div>
   <?php endif ?>
 
   <?php if (!$parent_id) : ?>

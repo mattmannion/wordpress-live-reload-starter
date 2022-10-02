@@ -21,7 +21,7 @@
   <div>
     <span>back to</span>
     <a href="<?php echo get_post_type_archive_link('post') ?>">
-      <?php echo get_post_type() ?>
+      <?php echo get_post_type() ?>s
     </a>
   </div>
 </div>

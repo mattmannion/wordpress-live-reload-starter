@@ -1,1 +1,3 @@
+this is for me to exclude certain areas for finer searches. it can be wholely ignored by anyone else.
+
 fictional-university-theme/**, build/**, modules/**, *.map, *.js, *.mjs, *.css, .md, *.d.ts, *.json, *.txt, gen-mapping.ts

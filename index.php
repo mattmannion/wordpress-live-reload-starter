@@ -2,15 +2,15 @@
 
 <div class="posts">
   <?php while (have_posts()) :
-    the_post();
+    the_post()
   ?>
 
     <h2>
-      <?php the_title() ?>
+      <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
     </h2>
-    <div><?php the_content() ?></div>
+    <div><?php the_excerpt() ?></div>
 
-  <?php endwhile; ?>
+  <?php endwhile ?>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer() ?>

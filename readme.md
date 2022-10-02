@@ -1,6 +1,6 @@
 # About
 
-This repo is for setting up a live reloading session for wordpress or php projects. The browser will reload on file change just like a nodejs project would. Tested only [**Localwp**](https://localwp.com/), I will test others in the future. This starter also assumes basic understanding of [**Webpack**](https://webpack.js.org/) configuration. It is setup for TS and SCSS by default. I can add other setups in other branches if requested.
+This repo is for setting up a live reloading session for wordpress or php projects. The browser will reload on file change just like a nodejs project would. This starter-template also assumes basic understanding of [**Webpack**](https://webpack.js.org/) configuration. It is setup for TS and SCSS by default. I can add other setups in other branches if requested.
 
 ## Live Reload
 
@@ -14,31 +14,21 @@ This repo is for setting up a live reloading session for wordpress or php projec
 - Source: http://`<wpurl>`/\* - the /\* is how the magic happens
   > Note: Set the `Monitor source URLS every X seconds` to .5 seconds for the fastest refresh.
 
-## Essential PHP
+## Installation guide
 
-The following php function links resources to the theme:
+Copy the docker-compose.yml found in this repo to where you want this wordpress install to live. Use `docker-compose up -d` to install the images and volumes to the target directory. Next use `sudo chmod 777 -R ./*` to take ownership of the created volume files for local development.
 
-File name: functions.php
+Now we need to clone this repo to a theme folder. Navigate to wp-content/themes and make a folder there. You can name it whatever you want. cd into that newly created folder and clone this repo inside the theme folder using `git clone git@github.com:mattmannion/wordpress-live-reload-starter.git .`
 
-```
-function main_files() {
-  wp_enqueue_style('styles', get_stylesheet_uri());
-  wp_enqueue_style('css', get_template_directory_uri() . '/dist/styles/index.css');
-  wp_enqueue_script('js', get_template_directory_uri() . '/dist/scripts/index.js');
-}
-
-add_action('wp_enqueue_scripts', 'main_files');
-```
-
-## Terminal Commands
+After those steps are finished you can run the following commands:
 
 ```
-yarn to install all deps
+yarn
 
-npm run dev
+npm run d
 ```
 
-use `dev` to start the scss and typescript compile
+These two commands will install all dependancies using yarn(you can also use `npm i` if you'd like) and `npm run d` will start up webpack for you and watch the files for any changes.
 
 ## Dependencies
 

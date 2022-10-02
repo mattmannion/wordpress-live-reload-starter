@@ -9,7 +9,18 @@
     "rf:d": "rimraf dist/*",
     "wp": "webpack",
     "clear": "clear",
-    "d": "run-s rf:d clear wp"
+    "wp:rc": "run-s rf:d clear wp",
+    "clone": "mu-plugins/clone.sh",
+    "mu-p": "nodemon",
+    "d": "run-p mu-p wp:rc"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "mu-plugins/"
+    ],
+    "ext": "php",
+    "signal": "SIGTERM",
+    "exec": "npm run clone || exit 1"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",

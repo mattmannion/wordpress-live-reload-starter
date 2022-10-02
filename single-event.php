@@ -10,10 +10,6 @@
 
   <h2><?php the_title() ?></h2>
 
-  <div class="metabox">
-    <?php echo 'metabox' ?>
-  </div>
-
   <div><?php the_content() ?></div>
 
   <?php endwhile ?>

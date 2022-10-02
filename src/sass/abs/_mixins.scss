@@ -1,0 +1,25 @@
+@mixin ImageFix {
+  & > span {
+    height: 100% !important;
+    display: block !important;
+  }
+}
+
+@mixin ImageFade($direction, $color) {
+  background: linear-gradient(to $direction, $color, transparent);
+}
+
+@mixin Divider($color) {
+  background-color: $color;
+
+  height: 75rem;
+
+  margin-top: -25rem;
+
+  // old clip-path
+  // please keep for ref
+  // clip-path: polygon(0 33%, 100% 0, 100% 66%, 0 100%);
+
+  // the 300 rem values may need to be higher on higher res screens
+  clip-path: polygon(0 33%, 300rem 0, 300rem 66%, 0 100%);
+}

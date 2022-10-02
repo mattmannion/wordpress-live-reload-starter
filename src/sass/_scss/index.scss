@@ -1,23 +1,14 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
+@import '../abs/mixins';
+@import '../abs/mq-mgr';
+@import '../abs/vars';
 
-  background-color: black;
-  color: red;
-}
+@import '../base/base';
+@import '../base/reset';
+@import '../base/typography';
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
+@import '../components/nav';
 
-  opacity: 0;
-  transition: opacity 300ms;
-
-  &--active {
-    opacity: 1;
-  }
-}
+@import '../pages/home';
+@import '../pages/page';
+@import '../pages/posts';
+@import '../pages/single';

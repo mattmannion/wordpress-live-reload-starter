@@ -1,0 +1,1 @@
+fictional-university-theme/**, build/**, modules/**, *.map, *.js, *.mjs, *.css, .md, *.d.ts, *.json, *.txt, gen-mapping.ts

@@ -18,11 +18,22 @@ function main_features()
 add_action('after_setup_theme', 'main_features');
 
 // filters
-function nav_active_class($classes)
+function nav_active_class_main($classes)
 {
   if (in_array('current-menu-item', $classes)) $classes[] = 'nav--active';
 
   return $classes;
 }
 
-add_filter('nav_menu_css_class', 'nav_active_class');
+add_filter('nav_menu_css_class', 'nav_active_class_main');
+
+function nav_active_class_sub($classes, $menu_item)
+{
+  global $post;
+
+  $classes[] = ($menu_item->url == get_post_type_archive_link($post->post_type))
+    ? 'current-menu-item nav--active' : '';
+
+  return $classes;
+}
+add_filter('nav_menu_css_class', 'nav_active_class_sub', 10, 2);

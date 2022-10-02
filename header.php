@@ -9,9 +9,8 @@
 
 <body <?php body_class() ?>>
   <?php
-  $nav_class = get_post_type() == 'post' ? "nav link__active" : "nav";
   wp_nav_menu([
     'theme_location' => 'headerMenu',
-    'menu_class' => $nav_class
+    'menu_class' => 'nav'
   ]) ?>
   </div>

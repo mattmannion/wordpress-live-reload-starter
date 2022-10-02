@@ -3,7 +3,7 @@
 <div class="single">
   <?php while (have_posts()) : the_post() ?>
 
-  <div class="metabox">
+  <div class="single__metabox">
     posted by <?php the_author_posts_link() ?>,
     &nbsp; <?php the_time('F j, Y') ?> in <?php echo get_the_category_list(', ') ?>
   </div>

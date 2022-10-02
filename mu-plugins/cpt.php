@@ -6,6 +6,7 @@ function cpt()
     'has_archive' => true,
     'show_in_rest' => true,
     'rewrite' => ['slug' => 'events'],
+    'supports' => ['title', 'editor', 'excerpt'],
     'labels' => [
       'name' => 'Events',
       'add_new_item' => 'Add New Event',

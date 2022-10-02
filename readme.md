@@ -29,24 +29,3 @@ npm run d
 ```
 
 These two commands will install all dependancies using yarn(you can also use `npm i` if you'd like) and `npm run d` will start up webpack for you and watch the files for any changes.
-
-## Dependencies
-
-<ol>
-  <li>npm-run-all</li>
-  <li>rimraf</li>
-  <li>typescript</li>
-  <li>postcss</li>
-  <li>autoprefixer</li>
-  <li>sass</li>
-  <li>webpack</li>
-  <li>webpack-cli</li>
-</ol>
-
-## Technical Notes / FAQ
-
-Q: My project is not refreshing when saving a Script or Style File
-
-> Note: Script or Style referring to JS, TS, CSS, SCSS, ect...
-
-A: Node and Webpack must be using the file system native to the project. For example: If you are using WSL2, you will need to switch over to powershell or WSL1 for this to work properly.

@@ -20,7 +20,7 @@
     ],
     "ext": "php",
     "signal": "SIGTERM",
-    "exec": "cd mu-plugins && npm run clone || exit 1"
+    "exec": "npm run clone || exit 1"
   },
   "devDependencies": {
     "@types/common-tags": "^1.8.1",

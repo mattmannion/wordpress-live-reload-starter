@@ -9,8 +9,7 @@
   <?php while (have_posts()) : the_post() ?>
   <div class="posts__post">
     <div class="posts__metabox">
-      posted by <?php the_author_posts_link() ?>,
-      &nbsp; <?php the_time('F j, Y') ?> in <?php echo get_the_category_list(', ') ?>
+      posted by <?php the_author_posts_link() ?>, &nbsp; <?php the_time('F j, Y') ?>
     </div>
 
     <h2>

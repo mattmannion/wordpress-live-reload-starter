@@ -3,7 +3,7 @@
 cd mu-plugins
 mkdir -p ../../../mu-plugins &&
 sleep 1 &&
-mkdir -p ../../../mu-plugins &&
+rm -rf ../../../mu-plugins/*.php &&
 cp *.php ../../../mu-plugins
 
 echo 'plugins cloned'
